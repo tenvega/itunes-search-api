@@ -21,13 +21,13 @@ submit.addEventListener('click', function() {
 
         for (let i = 0; i < data.results.length; i++) {
 
-          container1.innerHTML += `<div class = "container2">
-    <img class="cover" src = "${data.results[i].artworkUrl100}"></img>
+      container1.innerHTML += `<div class = "container2">
+      <img class="cover" src = "${data.results[i].artworkUrl100}"></img>
       <div>
-       <div style="display: none" class = "preview"  >${data.results[i].previewUrl}</div>
-       <div class = "artist">${data.results[i].artistName}</div>
-       <div class = "song">${data.results[i].trackName}</div>
-       </div>
+        <div style="display: none" class = "preview"  >${data.results[i].previewUrl}</div>
+        <div class = "artist">${data.results[i].artistName}</div>
+        <div class = "song">${data.results[i].trackName}</div>
+        </div>
       </div>`
 
           document.querySelector(".container1").addEventListener("click", function(event) {
